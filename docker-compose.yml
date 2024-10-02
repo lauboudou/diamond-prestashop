@@ -1,0 +1,16 @@
+services:
+  landing-page:
+    container_name: ${LANDING_CONTAINER_NANE}
+    image: ${LANDING_IMAGE}
+    restart: unless-stopped
+    ports:
+     - 88:80
+    networks:
+      - diamond-network
+    volumes:
+      - ./volumes/landing-data:/usr/share/nginx/html
+
+networks:
+    diamond-network:
+      driver: bridge
+      external: true
