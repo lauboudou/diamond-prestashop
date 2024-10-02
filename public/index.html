@@ -1,43 +1,163 @@
+
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajeunir de 20 ans</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .header {
+            background: url('https://i.pinimg.com/originals/f5/28/b8/f528b8aba5444331781f6746174c963a.jpg') no-repeat center center;
+            background-size: cover;
+            height: 80vh;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .header h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+        .header p {
+            font-size: 1.5rem;
+        }
+        .btn-primary {
+            background-color: #ff6f61;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+        }
+        .testimonials {
+            background-color: #f9f9f9;
+            padding: 4rem 0;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <!-- Header Section -->
+    <section class="header d-flex flex-column justify-content-center align-items-center">
+        <h1>Rajeunissez de 20 ans en quelques semaines</h1>
+        <p>Découvrez le secret pour retrouver votre jeunesse et votre vitalité.</p>
+        <a href="#form-section" class="btn btn-primary mt-4">Essayez maintenant</a>
+    </section>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <!-- Description Section -->
+    <section class="container py-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="https://example.com/feature-image.jpg" class="img-fluid" alt="Rajeunissement">
+            </div>
+            <div class="col-md-6 d-flex flex-column justify-content-center">
+                <h2>Le secret pour paraître plus jeune</h2>
+                <p>Notre solution révolutionnaire utilise des technologies avancées pour améliorer votre peau, renforcer votre corps et booster votre énergie.</p>
+            </div>
+        </div>
+    </section>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    <!-- Key Features Section -->
+    <section class="container py-5">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <i class="fas fa-spa fa-3x"></i>
+                <h3>Rajeunissement de la peau</h3>
+                <p>Une peau éclatante et sans rides en quelques semaines.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-heart fa-3x"></i>
+                <h3>Boost d'énergie</h3>
+                <p>Retrouvez la vitalité de vos 20 ans.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-dumbbell fa-3x"></i>
+                <h3>Renforcement du corps</h3>
+                <p>Un corps plus fort et plus résistant.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container text-center">
+            <h2>Témoignages</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <blockquote>
+                        <p>"J'ai retrouvé la peau de mes 20 ans. Incroyable!"</p>
+                        <footer>- Sophie, 45 ans</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4">
+                    <blockquote>
+                        <p>"Je me sens plein d'énergie, comme jamais auparavant."</p>
+                        <footer>- Marc, 50 ans</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4">
+                    <blockquote>
+                        <p>"Mon corps est plus fort et plus sain. Merci!"</p>
+                        <footer>- Isabelle, 60 ans</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Testimonials Section -->
+<section id="form-section" class="container py-5">
+<div class="container">
+  <div class="form-title">Suivez moi pour découvrir nos produits...</div>
+  <form id="ageForm" class="row g-3 justify-content-center">
+    <div class="col-md-6">
+       <label for="name" class="form-label">Nom complet</label>
+       <input type="text" class="form-control" id="name" required>
+    </div>
+    <div class="col-md-6">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email" required>
+    </div>
+    <div class="col-mb-6">
+      <label for="age" class="form-label">Age</label>
+      <input type="number" class="form-control" id="age" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Commencez maintenant</button>
+  </form>
+  <div id="result" class="mt-4"></div>
+</div>
+</section>
+
+<script>
+  document.getElementById('ageForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    let age = document.getElementById('age').value;
+    if (age && age > 17) {
+      let newAge = age;
+      document.getElementById('result').innerHTML = `<p style="color: blue;">Pour découvrir nos produits, merci de s'Inscrire sur le site diamond </p>`;
+      setTimeout(function() {
+        window.location.href = 'http://localhost:8011/inscription';
+      }, 3000); // Redirection après 3 secondes
+    } else {
+      document.getElementById('result').innerHTML = '<p class="text-danger">L\'âge doit être supérieur ou égal à 18.</p>';
+    }
+  });
+</script>
+
+
+    <!-- Footer -->
+    <section class="footer">
+        <p>&copy; 2024 Rajeunir de 20 ans. Tous droits réservés.</p>
+    </section>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
