@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: prestashop-landing-page
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: prestashop-landing-page
+  template:
+    metadata:
+      labels:
+        app: prestashop-landing-page
+    spec:
+      containers:
+        - name: prestashop-landing-page
+          image: dlaubo/prestashop-landing-page:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 88
