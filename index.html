@@ -139,7 +139,6 @@
     event.preventDefault();
     let age = document.getElementById('age').value;
     if (age && age > 17) {
-      //let newAge = age;
       document.getElementById('result').innerHTML = `<p style="color: blue;">Pour découvrir nos produits, merci de s'Inscrire sur le site diamond </p>`;
       setTimeout(function() {
         window.location.href = 'http://localhost:8011/inscription';
