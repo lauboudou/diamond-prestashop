@@ -15,4 +15,4 @@ spec:
           service:
             name: prestashop-landing-page-service
             port:
-              number: 88
+              number: 80
